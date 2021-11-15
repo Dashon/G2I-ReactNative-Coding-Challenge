@@ -11,6 +11,9 @@ interface Props {
   onPressItem: Function
 }
 
+/**
+* component to display one answer
+*/
 const Answer: React.FC<Props> = (props) => {
   const { description, onPressItem } = props;
 

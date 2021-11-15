@@ -1,3 +1,6 @@
+/**
+* interface for quiz questions
+*/
 export interface IQuizQuestion {
     type: String,
     difficulty: String,
