@@ -1,5 +1,8 @@
 const API_URL = "https://opentdb.com";
 
+/**
+* function to fetch trivia data
+*/
 export const getTriviaQuestions = async (amount = 10, type = "boolean", difficulty = "hard") => {
 	difficulty = difficulty.toLowerCase();
 	const url = `${API_URL}/api.php?amount=${amount}&type=${type}&difficulty=${difficulty}`;

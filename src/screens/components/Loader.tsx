@@ -26,6 +26,11 @@ interface Props {
   loadingText: string,
   onRetryTouched: Function
 }
+
+
+/**
+* component to display spinner or network error
+*/
 const Loader: React.FC<Props> = (props) => {
 
   const { loading, error, loadingText, onRetryTouched } = props;

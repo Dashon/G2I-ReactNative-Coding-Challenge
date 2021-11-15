@@ -11,6 +11,9 @@ import { useActions } from "../hooks";
 const DIFFICULTIES = ["easy", "medium", "hard"];
 const QUESTION_COUNTS = [10, 20, 30];
 
+/**
+* screen to display a game in configuration
+*/
 const SettingsScreen = () => {
   const [questionDifficulty, setQuestionDifficulty] = useState(0);
   const [questionCount, setQuestionCount] = useState(0);

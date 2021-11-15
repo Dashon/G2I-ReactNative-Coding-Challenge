@@ -9,6 +9,11 @@ interface Props {
   question: String
   isCorrect: boolean
 }
+
+/**
+* component to display a answer with incorrect or correct indication
+*/
+
 const GradedAnswer: React.FC<Props> = (props) => {
   const { question, isCorrect } = props;
 

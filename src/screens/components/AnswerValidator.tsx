@@ -8,6 +8,9 @@ import LottieView from "lottie-react-native";
 import INCORRECT_GRAPHIC from "../../../assets/animations/33620-wrong-notif.json"
 import CORRECT_GRAPHIC from "../../../assets/animations/33621-notif-correct.json"
 
+/**
+* component to display validated answer results
+*/
 interface Props {
   isCorrect: boolean
 }

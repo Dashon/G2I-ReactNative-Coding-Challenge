@@ -11,6 +11,9 @@ import { useActions, useSelector } from "../hooks";
 
 const BACKGROUND_IMAGE = require("../../assets/images/zoom_out.jpeg");
 
+/**
+* screen to display game results 
+*/
 const ResultsScreen = () => {
   const { showGameSettings, goToHome } = useActions();
   const { totalScore, questions } = useSelector((state) => state.game);

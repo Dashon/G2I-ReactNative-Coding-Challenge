@@ -4,8 +4,11 @@ import { ActionType } from './';
 import * as OpentDbAPI from "../../services/OpentDbAPI";
 import { IQuizQuestion } from "../../interfaces/IQuizQuestion";
 
-export const fetchTriviaQuestions = (gameType:string, difficulty:string, questionCount:number) => {
 
+/**
+* action to fetch trivia data
+*/
+export const fetchTriviaQuestions = (gameType:string, difficulty:string, questionCount:number) => {
   return (dispatch) => {
     OpentDbAPI.getTriviaQuestions(questionCount, gameType, difficulty).then((questions) => {
       const formatedQuestions: Array<IQuizQuestion> = questions.map(

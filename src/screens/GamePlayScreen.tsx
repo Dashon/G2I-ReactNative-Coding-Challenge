@@ -7,6 +7,9 @@ import {
 import { AnswerValidator, Loader, Button, Question } from "./components";
 import { useActions, useSelector } from "../hooks";
 
+/**
+* screen to display a game in progress
+*/
 const GamePlay = () => {
   const [answerStatus, setAnswerStatus] = useState(false);
   const [isCorrect, setIsCorrect] = useState(true);

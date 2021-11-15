@@ -1,5 +1,7 @@
 import { IQuizQuestion } from ".";
-
+/**
+* interface for Game
+*/
 export default interface IGame {
     questions: Array<IQuizQuestion>,
     currentQuestionIndex: number,

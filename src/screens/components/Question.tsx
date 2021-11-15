@@ -17,6 +17,9 @@ interface Props {
   options: any
 }
 
+/**
+* component to display a question with all answers
+*/
 const Question: React.FC<Props> = (props) => {
   const { onItemSelected, options, question } = props
   return (
